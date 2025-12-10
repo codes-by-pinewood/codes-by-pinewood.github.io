@@ -7,83 +7,92 @@
 
   <style>
     body {
-      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      font-family: "Poppins", sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #f0f4ff, #ffffff);
+      background: #faf5ff;
       color: #333;
     }
 
     header {
+      background: linear-gradient(135deg, #b388ff, #7c4dff);
+      color: white;
       text-align: center;
       padding: 60px 20px;
-      background: linear-gradient(135deg, #4b79a1, #283e51);
-      color: #fff;
+      border-bottom-left-radius: 50% 10%;
+      border-bottom-right-radius: 50% 10%;
+      position: relative;
     }
 
     header img {
-      width: 130px;
-      height: 130px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      border: 4px solid #fff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 2.8em;
-      margin: 10px 0 5px 0;
-    }
-
-    header p {
-      font-size: 1.2em;
-      opacity: 0.9;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
     section {
       max-width: 900px;
-      margin: 30px auto;
+      margin: auto;
+      background: white;
       padding: 30px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      border-radius: 20px;
+      margin-top: 30px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     }
 
     h2 {
-      font-size: 1.8em;
-      border-left: 5px solid #4b79a1;
-      padding-left: 10px;
+      font-size: 28px;
+      color: #6a1b9a;
+      border-left: 6px solid #ce93d8;
+      padding-left: 12px;
     }
 
     .project {
-      margin-bottom: 25px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #eee;
-    }
-
-    .project:last-child {
-      border-bottom: none;
+      background: #f3e5f5;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      border-left: 6px solid #ba68c8;
     }
 
     .project h3 {
-      margin-bottom: 5px;
+      margin-top: 0;
+      color: #4a148c;
     }
 
     a {
-      color: #4b79a1;
-      text-decoration: none;
+      color: #8e24aa;
       font-weight: bold;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
     }
 
     footer {
       text-align: center;
-      padding: 25px;
-      font-size: 0.9em;
-      color: #666;
+      font-size: 0.9rem;
+      padding: 20px;
+      margin-top: 40px;
+      color: #777;
     }
   </style>
 </head>
@@ -91,21 +100,21 @@
 <body>
 
   <header>
-    <!-- ⭐ Replace with your picture -->
-    <img src="your-photo.jpg" alt="Profile Photo">
+    <!-- ⭐ Add your photo here -->
+    <img src="your_photo.jpg" alt="Photo of Sherry">
 
     <h1>Sherry Usman</h1>
-    <p>Aspiring Data Scientist • Problem Solver • Creator</p>
+    <p>Aspiring Data Scientist • Illustrator • Explorer</p>
   </header>
 
   <section>
     <h2>About Me</h2>
     <p>
-      I am a first-generation immigrant from Pakistan, currently completing my Master’s in
-      Data Science at Leiden University. I love building tools that extract insight from 
-      complex data, and I’m passionate about climate applications and satellite analytics. 
-      Outside academics, I enjoy illustrating, cooking, and learning Dutch — I’m currently 
-      at B1 level!
+      Hi! I'm Sherry — a first-generation immigrant from Pakistan and a Master's
+      student in Data Science at Leiden University.  
+      I love solving problems, creating beautiful things, and exploring new places.
+      When I’m not working with data, you’ll find me illustrating, cooking, or improving my Dutch
+      (currently B1 🌷).  
     </p>
   </section>
 
@@ -113,37 +122,45 @@
     <h2>Projects</h2>
 
     <div class="project">
-      <h3>Methane Plume Detection using Artificially Generated TROPOMI-like Images</h3>
+      <h3>Methane Plume Detection using TROPOMI Data</h3>
       <p>
-        My master’s thesis explores automated detection and segmentation of methane 
-        plumes using machine learning and satellite remote sensing imagery.
+        For my thesis, I developed a deep-learning segmentation model for methane plume
+        detection using satellite imagery, combining atmospheric modeling and computer vision.
       </p>
-      <p><a href="https://github.com/yourusername/thesis-repo">View on GitHub →</a></p>
-    </div>
-
-      <div class="project">
-      <h3>Anomaly Detection </h3>
-      <p>A short description of your second project goes here.</p>
-      <p><a href="https://github.com/codes-by-pinewood/Assignment-6">View on GitHub →</a></p>
+      <p><a href="https://github.com/yourusername/repo">View on GitHub →</a></p>
     </div>
 
     <div class="project">
-      <h3>Automated Segmentation of ---</h3>
-      <p>A short description of your second project goes here.</p>
-      <p><a href="https://github.com/codes-by-pinewood/Assignment-6">View on GitHub →</a></p>
+      <h3>Illustration Collection</h3>
+      <p>A curated set of digital illustrations I created during my free time.</p>
+      <p><a href="https://github.com/yourusername/repo">View on GitHub →</a></p>
     </div>
 
+  </section>
+
+  <section>
+    <h2>Life in the Netherlands 🇳🇱</h2>
+    <p>A glimpse into my life here — bikes, canals, study sessions, food adventures, and quiet moments.</p>
+
+    <div class="gallery">
+      <!-- ⭐ Replace these with your real image filenames -->
+      <img src="nl1.jpg" alt="Netherlands photo 1">
+      <img src="nl2.jpg" alt="Netherlands photo 2">
+      <img src="nl3.jpg" alt="Netherlands photo 3">
+      <img src="nl4.jpg" alt="Netherlands photo 4">
+      <img src="nl5.jpg" alt="Netherlands photo 5">
+    </div>
   </section>
 
   <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:sherryusman135@email.com">sherryusman135@email.com</a></p>
     <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
-    <p>GitHub: <a href="https://github.com/codes-by-pinewood">github.com/codes-by-pinewood</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
   </section>
 
   <footer>
-    © Sherry Usman 
+    © 2025 Sherry Usman — Built with 💜 and GitHub Pages
   </footer>
 
 </body>
